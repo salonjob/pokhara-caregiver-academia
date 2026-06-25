@@ -27,7 +27,7 @@ const InstagramIcon = () => (
 const branches = [
   { label: 'HEAD OFFICE', name: 'New Baneshwor', location: 'Thulokhari Bot, Kathmandu', here: false },
   { label: 'BRANCH', name: 'Butwal Branch', location: 'Kalikanagar, Rupandehi', here: false },
-  { label: 'BRANCH', name: 'Jadibuti', location: 'Kathmandu', here: false },
+  { label: 'BRANCH', name: 'Ithari', location: 'Sunsari, Koshi Province', here: false },
   { label: 'BRANCH', name: 'Bijuli Bazar', location: 'Kathmandu', here: false },
   { label: 'YOU ARE HERE', name: 'Pokhara', location: 'Gandaki Province', here: true },
 ]
