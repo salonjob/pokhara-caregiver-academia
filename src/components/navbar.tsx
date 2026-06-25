@@ -80,6 +80,7 @@ export default function Navbar() {
 
             <Link href="/" className={linkClass}>Home</Link>
             <Link href="/about" className={linkClass}>About</Link>
+            <Link href="/resources" className={linkClass}>Resources</Link>
 
             {/* Courses Dropdown */}
             <div className="relative">
@@ -189,6 +190,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            <Link
+              href="/resources"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
+            >
+              Resources
+            </Link>
 
             {/* Mobile Courses */}
             <div>
