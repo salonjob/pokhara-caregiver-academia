@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import { courses } from '@/data/courses'
@@ -35,16 +36,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className={cn(
-              'font-heading font-bold text-lg leading-tight',
-              isScrolled ? 'text-primary' : 'text-white'
-            )}>
-              <span className="block">Caregiver Academia</span>
-              <span className={cn('text-sm font-medium', isScrolled ? 'text-accent-teal' : 'text-sky-300')}>
-                Pokhara
-              </span>
-            </div>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Caregiver Academia Pokhara"
+              width={180}
+              height={60}
+              className={cn(
+                'h-10 w-auto transition-all duration-300',
+                isScrolled ? 'brightness-100' : 'brightness-0 invert'
+              )}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
