@@ -3,15 +3,29 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, Phone } from 'lucide-react'
+import { Menu, X, ChevronDown, Phone, ShieldCheck } from 'lucide-react'
 import { siteConfig } from '@/data/site'
 import { courses } from '@/data/courses'
 import { cn } from '@/lib/utils'
+
+const VERIFICATION_LINKS = [
+  {
+    label: 'Certification Verification',
+    href: 'https://crm.caregiveracademia.com/certificate',
+    description: 'Verify a course certificate',
+  },
+  {
+    label: 'Student Verification',
+    href: 'https://crm.caregiveracademia.com/student-details-request',
+    description: 'Request student details',
+  },
+]
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [coursesOpen, setCoursesOpen] = useState(false)
+  const [verifyOpen, setVerifyOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10)
@@ -22,9 +36,22 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/fees', label: 'Fees' },
     { href: '/contact', label: 'Contact' },
   ]
+
+  const linkClass = cn(
+    'px-3 py-2 rounded-md text-sm font-medium transition-colors',
+    isScrolled
+      ? 'text-text-dark hover:text-primary hover:bg-slate-50'
+      : 'text-white/90 hover:text-white hover:bg-white/10'
+  )
+
+  const dropdownBtnClass = cn(
+    'flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors',
+    isScrolled
+      ? 'text-text-dark hover:text-primary hover:bg-slate-50'
+      : 'text-white/90 hover:text-white hover:bg-white/10'
+  )
 
   return (
     <nav
@@ -35,6 +62,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <Image
@@ -49,32 +77,16 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'px-3 py-2 rounded-md text-sm font-medium transition-colors',
-                  isScrolled
-                    ? 'text-text-dark hover:text-primary hover:bg-slate-50'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+
+            <Link href="/" className={linkClass}>Home</Link>
+            <Link href="/about" className={linkClass}>About</Link>
 
             {/* Courses Dropdown */}
             <div className="relative">
               <button
-                onClick={() => setCoursesOpen(!coursesOpen)}
+                onClick={() => { setCoursesOpen(!coursesOpen); setVerifyOpen(false) }}
                 onBlur={() => setTimeout(() => setCoursesOpen(false), 200)}
-                className={cn(
-                  'flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors',
-                  isScrolled
-                    ? 'text-text-dark hover:text-primary hover:bg-slate-50'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
-                )}
+                className={dropdownBtnClass}
               >
                 Courses <ChevronDown className={cn('w-4 h-4 transition-transform', coursesOpen && 'rotate-180')} />
               </button>
@@ -98,6 +110,38 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            {/* Verification Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => { setVerifyOpen(!verifyOpen); setCoursesOpen(false) }}
+                onBlur={() => setTimeout(() => setVerifyOpen(false), 200)}
+                className={dropdownBtnClass}
+              >
+                Verification <ChevronDown className={cn('w-4 h-4 transition-transform', verifyOpen && 'rotate-180')} />
+              </button>
+              {verifyOpen && (
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-2 z-50">
+                  {VERIFICATION_LINKS.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 px-4 py-3 hover:bg-slate-50 group"
+                    >
+                      <ShieldCheck className="w-4 h-4 text-accent-teal mt-0.5 flex-shrink-0" />
+                      <div>
+                        <p className="text-sm font-medium text-text-dark group-hover:text-accent-teal">{item.label}</p>
+                        <p className="text-xs text-text-muted">{item.description}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link href="/contact" className={linkClass}>Contact</Link>
 
             <a
               href={`tel:${siteConfig.phone}`}
@@ -145,6 +189,8 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Mobile Courses */}
             <div>
               <Link
                 href="/courses"
@@ -166,6 +212,26 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+
+            {/* Mobile Verification */}
+            <div>
+              <p className="px-3 py-2 text-text-dark font-medium">Verification</p>
+              <div className="pl-4 space-y-1">
+                {VERIFICATION_LINKS.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-1.5 text-sm text-text-muted hover:text-accent-teal"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
             <div className="pt-3 border-t border-slate-100">
               <a
                 href={`tel:${siteConfig.phone}`}
