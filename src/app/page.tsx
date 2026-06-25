@@ -40,7 +40,7 @@ const homepageFAQs = [
   {
     question: 'Are installment payment plans available?',
     answer:
-      "Yes, installment payment plans are available for all courses. Contact us on WhatsApp (+977-9851431007) or visit our Pokhara office (Sunday–Friday, 7am–6pm) to discuss the payment schedule for your chosen course.",
+      "Yes, installment payment plans are available for all courses. Contact us on WhatsApp (+977-9714528274) or visit our Pokhara office (Sunday–Friday, 7am–6pm) to discuss the payment schedule for your chosen course.",
   },
   {
     question: 'Which districts of Gandaki Province does Caregiver Academia Pokhara serve?',

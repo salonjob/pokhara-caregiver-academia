@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/site'
 export const metadata: Metadata = {
   title: 'Contact Caregiver Academia Pokhara — Phone, WhatsApp, Address',
   description:
-    'Contact Caregiver Academia Pokhara. Phone: +977-9851431007 (WhatsApp), Email: pokhara@caregiveracademia.com. Located in Pokhara, Kaski, Gandaki Province. Open Sunday–Friday 07:00–18:00.',
+    'Contact Caregiver Academia Pokhara. Phone: +977-9714528274 (WhatsApp), Email: pokhara@caregiveracademia.com. Located in Pokhara, Kaski, Gandaki Province. Open Sunday–Friday 07:00–18:00.',
   alternates: { canonical: `${siteConfig.url}/contact` },
 }
 

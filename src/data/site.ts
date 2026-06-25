@@ -6,10 +6,10 @@ export const siteConfig = {
     "Caregiver Academia Pokhara is Gandaki Province's #1 CTEVT-affiliated caregiver training institute. CPD UK Member No. 20520, SDC Canada Partner Code 1226, ISO 9001:2015 Certified. Train for Japan, Israel, Australia, Canada, USA & UK.",
   url: 'https://pokhara.caregiveracademia.com',
   logo: '/logo.png',
-  phone: '+977-9851431007',
-  secondaryPhone: '+977-9705414482',
+  phone: '+977-9714528274',
+  secondaryPhone: '+977-9768566099',
   email: 'pokhara@caregiveracademia.com',
-  whatsappNumber: '9779851431007',
+  whatsappNumber: '9779714528274',
   address: {
     street: 'Pokhara',
     city: 'Pokhara',
