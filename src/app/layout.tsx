@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/caregiver-academia-pokhara.png',
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ['/og-image.jpg'],
+    images: ['/caregiver-academia-pokhara.png'],
   },
   robots: {
     index: true,
