@@ -231,10 +231,15 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
+      {/* Disclaimer + Copyright */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/35">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <p className="text-center text-xs text-white/40 mb-3 leading-relaxed">
+            <span className="font-semibold text-white/55">Caregiver Academia Pokhara</span> is an official branch of{' '}
+            <span className="text-white/55">Caregiver Academia</span>, delivering caregiver and aged care training in Pokhara
+            under a standardized curriculum and international certification frameworks.
+          </p>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/35 border-t border-white/10 pt-3">
             <p>© 2026 {siteConfig.legalName}. All rights reserved.</p>
             <p>CTEVT Affiliated · CPD UK No. 20520 · SDC Canada Code 1226 · ISO 9001:2015 Cert. E95ABA38</p>
           </div>
