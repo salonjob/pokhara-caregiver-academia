@@ -38,14 +38,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Caregiver Academia Pokhara"
               width={180}
               height={60}
-              className={cn(
-                'h-10 w-auto transition-all duration-300',
-                isScrolled ? 'brightness-100' : 'brightness-0 invert'
-              )}
+              className="h-10 w-auto"
               priority
             />
           </Link>
