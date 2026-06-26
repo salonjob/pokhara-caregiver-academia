@@ -132,6 +132,7 @@ export default function Navbar() {
               )}
             </div>
 
+            <Link href="/education-consultant" className={linkClass}>Education Consultant</Link>
             <Link href="/job-placement" className={linkClass}>GCC Salon Jobs</Link>
             <Link href="/contact" className={linkClass}>Contact</Link>
 
@@ -213,6 +214,14 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+
+            <Link
+              href="/education-consultant"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
+            >
+              Education Consultant
+            </Link>
 
             <Link
               href="/job-placement"
