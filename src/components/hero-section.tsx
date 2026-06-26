@@ -9,16 +9,33 @@ export default function HeroSection() {
   const destinations = ['Japan', 'Israel', 'Australia', 'Canada', 'USA', 'UK']
 
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden pt-16">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-accent-teal/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 -left-24 w-80 h-80 bg-accent-green/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl" />
-      </div>
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      {/* ── Graduation photo background with Ken Burns zoom ── */}
+      <div
+        className="absolute inset-0 bg-cover bg-center hero-bg-image"
+        style={{ backgroundImage: "url('/images/hero-graduation.webp')" }}
+        aria-hidden="true"
+      />
+
+      {/* ── Brand colour overlay: deep navy → primary → teal accent ── */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(15,45,82,0.82) 45%, rgba(14,165,233,0.20) 100%)',
+        }}
+        aria-hidden="true"
+      />
+
+      {/* ── Ambient glow orbs (brand accents) ── */}
+      <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-sky-400/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 -left-24 w-80 h-80 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
+
+      {/* ── Content ── */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="max-w-4xl mx-auto text-center">
+
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -117,8 +134,12 @@ export default function HeroSection() {
               </div>
             ))}
           </motion.div>
+
         </div>
       </div>
+
+      {/* Bottom fade into next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background-light/30 to-transparent pointer-events-none" />
     </section>
   )
 }

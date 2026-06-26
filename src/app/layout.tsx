@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
   keywords: [
     'caregiver training Pokhara',
     'CTEVT caregiver course Nepal',
@@ -54,7 +53,6 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
     images: [
       {
         url: '/caregiver-academia-pokhara.png',
@@ -67,7 +65,6 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
     images: ['/caregiver-academia-pokhara.png'],
   },
   robots: {
@@ -80,9 +77,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  alternates: {
-    canonical: siteConfig.url,
   },
 }
 

@@ -12,8 +12,7 @@ import { generateOrganizationSchema } from '@/data/schema'
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.tagline}`,
-  description: siteConfig.description,
-  alternates: { canonical: siteConfig.url },
+
 }
 
 const homepageFAQs = [
@@ -48,14 +47,14 @@ const homepageFAQs = [
       'We serve students from all 10 districts of Gandaki Province: Kaski, Syangja, Baglung, Parbat, Lamjung, Gorkha, Tanahun, Nawalpur, Manang, and Mustang. Many students travel from neighboring districts to study at our Pokhara institute.',
   },
   {
-    question: 'How long does it take to get a job abroad after completing the course?',
+    question: 'How long does it typically take to work abroad after completing the course?',
     answer:
-      'Typical job placement timelines vary by country: Japan (G2G/SSW) 6–12 months, Israel (G2G) 3–9 months, Australia 9–18 months, Canada 9–18 months. These timelines include visa processing, job matching, and pre-departure preparation.',
+      'Typical timelines vary by country: Japan (G2G/SSW) 6–12 months, Israel (G2G) 3–9 months, Australia 9–18 months, Canada 9–18 months. These timelines include visa processing and pre-departure preparation. Note that you will need to apply for jobs independently — Caregiver Academia supports your documentation but does not place you directly.',
   },
   {
     question: 'Does Caregiver Academia Pokhara provide job placement assistance?',
     answer:
-      'Yes, we provide job placement support including CV preparation, interview coaching, and direct referrals to our partner recruitment agencies. However, final employment and visa decisions are made by employers and government authorities.',
+      'No, Caregiver Academia does not provide any job placement service. We can help and provide support in your documentation process, but for job placement you will need to apply by yourself.',
   },
 ]
 

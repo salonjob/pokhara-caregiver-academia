@@ -36,11 +36,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: course.metaTitle,
-    description: course.metaDescription,
-    alternates: { canonical: `${siteConfig.url}/courses/${course.slug}` },
     openGraph: {
       title: course.metaTitle,
-      description: course.metaDescription,
       images: [{ url: course.heroImage, alt: course.title }],
     },
   }

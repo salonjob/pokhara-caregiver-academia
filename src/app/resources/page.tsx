@@ -5,13 +5,6 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'Caregiver Resources & Insights — Training Guides, Visa, Career News | Caregiver Academia Pokhara',
-  description:
-    'Free caregiver training resources for Nepal. Japan SSW visa guides, Israel G2G program, Australia aged care, Canada PSW & CNA guides, CTEVT certification info — all from Caregiver Academia Pokhara.',
-  alternates: { canonical: `${siteConfig.url}/resources` },
-  openGraph: {
-    title: 'Caregiver Resources & Insights — Caregiver Academia Pokhara',
-    description: 'Free guides on Japan, Israel, Australia, Canada caregiver careers from Nepal.',
-  },
 }
 
 const categories = [

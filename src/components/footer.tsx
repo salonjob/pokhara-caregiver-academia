@@ -100,6 +100,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { href: '/about', label: 'About Us' },
+                { href: '/resources', label: 'Resources' },
+                { href: '/education-consultant', label: 'Education Consultant' },
+                { href: '/job-placement', label: 'Job Placement' },
                 { href: '/fees', label: 'Fees & Pricing' },
                 { href: '/courses', label: 'Courses' },
                 { href: '/contact', label: 'Contact' },
@@ -241,7 +244,44 @@ export default function Footer() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/35 border-t border-white/10 pt-3">
             <p>© 2026 {siteConfig.legalName}. All rights reserved.</p>
-            <p>CTEVT Affiliated · CPD UK No. 20520 · SDC Canada Code 1226 · ISO 9001:2015 Cert. E95ABA38</p>
+            <p>
+              CTEVT Affiliated ·{' '}
+              <a
+                href="https://www.cpduk.co.uk/providers/caregiver-academia"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="hover:text-white/60 transition-colors"
+              >
+                CPD UK No. 20520
+              </a>{' '}
+              ·{' '}
+              <a
+                href="https://certification.sdccanada.org/verification-lp"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="hover:text-white/60 transition-colors"
+              >
+                SDC Canada Code 1226
+              </a>{' '}
+              ·{' '}
+              <a
+                href="https://www.iafcertsearch.org/certified-entity/7QXewh0Jr8smeLFkgnLWlwql"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="hover:text-white/60 transition-colors"
+              >
+                ISO 9001:2015 Cert. E95ABA38
+              </a>{' '}
+              ·{' '}
+              <a
+                href="https://www.iafcertsearch.org/certified-entity/7QXewh0Jr8smeLFkgnLWlwql"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="hover:text-white/60 transition-colors"
+              >
+                IAF
+              </a>
+            </p>
           </div>
         </div>
       </div>

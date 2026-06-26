@@ -35,7 +35,8 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
+    { href: '/education-consultant', label: 'Education Consultant' },
+    { href: '/job-placement', label: 'Job Placement' },
     { href: '/contact', label: 'Contact' },
   ]
 
@@ -79,8 +80,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-1">
 
             <Link href="/" className={linkClass}>Home</Link>
-            <Link href="/about" className={linkClass}>About</Link>
-            <Link href="/resources" className={linkClass}>Resources</Link>
+            <Link href="/education-consultant" className={linkClass}>Education Consultant</Link>
+            <Link href="/job-placement" className={linkClass}>Job Placement</Link>
 
             {/* Courses Dropdown */}
             <div className="relative">
@@ -190,14 +191,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-
-            <Link
-              href="/resources"
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
-            >
-              Resources
-            </Link>
 
             {/* Mobile Courses */}
             <div>

@@ -7,9 +7,7 @@ import CTASection from '@/components/cta-section'
 
 export const metadata: Metadata = {
   title: 'Course Fees — All 6 Caregiver Programs | Caregiver Academia Pokhara',
-  description:
-    'Full fee details for all 6 caregiver courses at Caregiver Academia Pokhara. NPR fees, installment options, and what is included. CTEVT + CPD UK + SDC Canada certified programs for Japan, Israel, Australia, Canada, USA & UK.',
-  alternates: { canonical: `${siteConfig.url}/fees` },
+
 }
 
 export default function FeesPage() {

@@ -131,9 +131,9 @@ export const courses: Course[] = [
           'Yes, installment payment plans are available. Contact us on WhatsApp or visit our Pokhara office for details on the payment schedule.',
       },
       {
-        question: 'What is the job placement support after the course?',
+        question: 'Does Caregiver Academia provide job placement after the course?',
         answer:
-          'We provide CV writing assistance, interview preparation, and direct referrals to our partner recruitment agencies in Australia, UK, and USA.',
+          'No, Caregiver Academia does not provide any job placement service. We can support you in your documentation process, but for job placement you will need to apply by yourself.',
       },
       {
         question: 'Do I need prior healthcare experience to enroll?',
@@ -233,7 +233,7 @@ export const courses: Course[] = [
       {
         question: 'Can I apply for a Canadian work permit with this certification?',
         answer:
-          'The SDC Canada certification strengthens your application. Our placement team guides you through the NOC code application process for Canada.',
+          'The SDC Canada certification strengthens your application. We can support you with documentation, but you will need to apply for the NOC code process for Canada independently.',
       },
       {
         question: 'How many hours of practical training are included?',
@@ -344,7 +344,7 @@ export const courses: Course[] = [
       {
         question: 'How soon after completion can I get a job in USA or Canada?',
         answer:
-          'Typical placement timeline is 6–18 months after course completion, depending on visa processing and employer demand. Our team actively assists with job applications.',
+          'Typical timelines are 6–18 months after course completion, depending on visa processing and employer demand. Caregiver Academia does not place you directly — you will need to apply independently, and we can support your documentation process.',
       },
     ],
   },
