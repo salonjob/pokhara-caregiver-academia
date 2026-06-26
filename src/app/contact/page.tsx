@@ -91,9 +91,9 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-primary mb-1">Address</p>
                     <p className="text-text-muted text-sm leading-relaxed">
-                      Pokhara, Kaski District<br />
-                      Gandaki Province<br />
-                      Nepal
+                      Anupam Marga, 12th Street,<br />
+                      New Road, Pokhara -8,<br />
+                      Kaski, Nepal.
                     </p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                       Caregiver Academia Pokhara
                     </h3>
                     <p className="text-text-muted mb-4">
-                      Pokhara, Kaski District, Gandaki Province, Nepal
+                      Anupam Marga, 12th Street, New Road, Pokhara -8, Kaski, Nepal.
                     </p>
                     <a
                       href={siteConfig.googleMaps}
