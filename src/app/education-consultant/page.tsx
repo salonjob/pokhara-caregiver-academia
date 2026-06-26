@@ -5,6 +5,7 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'Education Consultant — Next EduPath | Caregiver Academia Pokhara',
+  description: 'Next EduPath — education consultancy partner of Caregiver Academia Pokhara. Study or migrate to Japan, South Korea, Germany, Canada, UK, and Australia. Pokhara students get exclusive discounts.',
 
 }
 

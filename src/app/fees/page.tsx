@@ -7,6 +7,7 @@ import CTASection from '@/components/cta-section'
 
 export const metadata: Metadata = {
   title: 'Course Fees — All 6 Caregiver Programs | Caregiver Academia Pokhara',
+  description: 'Transparent course fee structure for all 6 caregiver programs at Caregiver Academia Pokhara. Flexible installment options available. Contact us for the latest batch intake and pricing.',
 
 }
 

@@ -4,6 +4,7 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'Contact Caregiver Academia Pokhara — Phone, WhatsApp, Address',
+  description: 'Contact Caregiver Academia Pokhara by phone, WhatsApp, or email. Visit us at Anupam Marga, New Road, Pokhara -8. Office hours: Sunday–Friday 7:00am–6:00pm.',
 
 }
 

@@ -12,7 +12,7 @@ import { generateOrganizationSchema } from '@/data/schema'
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.tagline}`,
-
+  description: "Nepal's #1 government-affiliated caregiver training institute in Pokhara. CTEVT affiliated · CPD UK No. 20520 · SDC Canada Code 1226 · ISO 9001:2015. Train for Japan, Israel, Australia, Canada, USA & UK.",
 }
 
 const homepageFAQs = [

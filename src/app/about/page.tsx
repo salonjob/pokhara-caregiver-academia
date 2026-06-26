@@ -5,6 +5,7 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'About Caregiver Academia Pokhara — Gandaki Province #1 Institute',
+  description: "Learn about Caregiver Academia Pokhara — Gandaki Province's most trusted CTEVT-affiliated caregiver training institute. Government affiliated, CPD UK & SDC Canada certified, ISO 9001:2015 quality assured.",
 
 }
 

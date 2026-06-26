@@ -87,6 +87,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        <link rel="preload" as="image" href="/images/hero-graduation.webp" fetchPriority="high" />
+      </head>
       <body className="font-sans">
         <Navbar />
         <main>{children}</main>

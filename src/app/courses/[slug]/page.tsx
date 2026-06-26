@@ -36,8 +36,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: course.metaTitle,
+    description: `${course.description} Certified by ${course.certifications.join(', ')}. Train at Caregiver Academia Pokhara, Gandaki Province's #1 CTEVT-affiliated institute.`,
     openGraph: {
       title: course.metaTitle,
+      description: course.description,
       images: [{ url: course.heroImage, alt: course.title }],
     },
   }

@@ -78,6 +78,8 @@ export default function Navbar() {
                 onClick={() => { setCoursesOpen(!coursesOpen); setVerifyOpen(false) }}
                 onBlur={() => setTimeout(() => setCoursesOpen(false), 200)}
                 className={dropdownBtnClass}
+                aria-haspopup="true"
+                aria-expanded={coursesOpen}
               >
                 Courses <ChevronDown className={cn('w-4 h-4 transition-transform', coursesOpen && 'rotate-180')} />
               </button>
@@ -108,6 +110,8 @@ export default function Navbar() {
                 onClick={() => { setVerifyOpen(!verifyOpen); setCoursesOpen(false) }}
                 onBlur={() => setTimeout(() => setVerifyOpen(false), 200)}
                 className={dropdownBtnClass}
+                aria-haspopup="true"
+                aria-expanded={verifyOpen}
               >
                 Verification <ChevronDown className={cn('w-4 h-4 transition-transform', verifyOpen && 'rotate-180')} />
               </button>

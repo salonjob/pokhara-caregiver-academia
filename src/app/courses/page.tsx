@@ -8,6 +8,7 @@ import CTASection from '@/components/cta-section'
 
 export const metadata: Metadata = {
   title: 'All Courses — 6 Internationally Certified Caregiver Programs | Caregiver Academia Pokhara',
+  description: 'Browse 6 internationally certified caregiver programs at Caregiver Academia Pokhara. Japan Kaigo, Aged Care Australia, CNA, Palliative Care, PSW Canada, and Israel-track courses. CTEVT & CPD UK certified.',
 
 }
 

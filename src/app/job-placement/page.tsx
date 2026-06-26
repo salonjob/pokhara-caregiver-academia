@@ -5,6 +5,7 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'GCC Salon Jobs — Nail Technician, Beautician & Caregiver Placement Dubai | Caregiver Academia Pokhara',
+  description: 'GCC Salon Jobs connects professional nail technicians, beauticians, and caregivers with employers in the Gulf and abroad. Caregiver Academia Pokhara provides documentation support.',
 }
 
 const placements = [

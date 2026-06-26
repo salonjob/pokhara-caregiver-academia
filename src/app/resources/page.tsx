@@ -5,6 +5,7 @@ import { siteConfig } from '@/data/site'
 
 export const metadata: Metadata = {
   title: 'Caregiver Resources & Insights — Training Guides, Visa, Career News | Caregiver Academia Pokhara',
+  description: 'Free caregiver training resources from Caregiver Academia Pokhara — country guides for Japan, Israel, Australia, Canada & UK, visa information, certification tips, and career insights.',
 }
 
 const categories = [
