@@ -116,7 +116,7 @@ export default function ContactPage() {
               {/* Social */}
               <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
                 <p className="font-semibold text-primary mb-3">Follow Us</p>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-3">
                   <a
                     href={siteConfig.facebook}
                     target="_blank"
@@ -134,6 +134,17 @@ export default function ContactPage() {
                   >
                     <Instagram className="w-4 h-4" />
                     Instagram
+                  </a>
+                  <a
+                    href={siteConfig.tiktok}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z" />
+                    </svg>
+                    TikTok
                   </a>
                 </div>
               </div>
