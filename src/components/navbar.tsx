@@ -33,13 +33,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/education-consultant', label: 'Education Consultant' },
-    { href: '/job-placement', label: 'Job Placement' },
-    { href: '/contact', label: 'Contact' },
-  ]
-
   const linkClass = cn(
     'px-3 py-2 rounded-md text-sm font-medium transition-colors',
     isScrolled
@@ -78,10 +71,6 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-
-            <Link href="/" className={linkClass}>Home</Link>
-            <Link href="/education-consultant" className={linkClass}>Education Consultant</Link>
-            <Link href="/job-placement" className={linkClass}>Job Placement</Link>
 
             {/* Courses Dropdown */}
             <div className="relative">
@@ -143,6 +132,7 @@ export default function Navbar() {
               )}
             </div>
 
+            <Link href="/job-placement" className={linkClass}>GCC Salon Jobs</Link>
             <Link href="/contact" className={linkClass}>Contact</Link>
 
             <a
@@ -181,16 +171,6 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 shadow-lg">
           <div className="px-4 py-3 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
-              >
-                {link.label}
-              </Link>
-            ))}
 
             {/* Mobile Courses */}
             <div>
@@ -233,6 +213,22 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+
+            <Link
+              href="/job-placement"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
+            >
+              GCC Salon Jobs
+            </Link>
+
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-2 text-text-dark hover:text-primary hover:bg-slate-50 rounded-md font-medium"
+            >
+              Contact
+            </Link>
 
             <div className="pt-3 border-t border-slate-100">
               <a
