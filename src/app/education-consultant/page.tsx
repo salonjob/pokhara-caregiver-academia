@@ -181,6 +181,24 @@ export default function EducationConsultantPage() {
         </div>
       </section>
 
+      {/* Visit Next EduPath */}
+      <section className="py-10 bg-background-light border-t border-slate-200">
+        <div className="max-w-xl mx-auto px-4 text-center">
+          <p className="text-text-muted text-sm mb-4">Want to learn more or browse Next EduPath services directly?</p>
+          <a
+            href="https://nextedupath.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-white font-bold rounded-xl hover:bg-primary-light transition-colors shadow-md"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Visit Next EduPath — Educational Consultancy
+          </a>
+        </div>
+      </section>
+
       {/* Disclaimer + CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
