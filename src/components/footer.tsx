@@ -141,8 +141,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-red-400 mt-0.5 flex-shrink-0" />
                 <span className="text-white/55 text-sm leading-relaxed">
-                  Anupama Marga, 12th Street,<br />
-                  New Road, Pokhara,<br />
+                  Anupam Marga, 12th Street,<br />
+                  New Road, Pokhara -8,<br />
                   Kaski, Nepal.
                 </span>
               </li>
