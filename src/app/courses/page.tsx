@@ -55,12 +55,6 @@ export default function CoursesPage() {
                   <div className="p-6 flex-1">
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                       <h2 className="font-heading font-bold text-2xl text-primary">{course.title}</h2>
-                      <div className="text-right">
-                        <p className="text-xs text-text-muted">Course Fee</p>
-                        <p className="font-bold text-lg text-primary">
-                          NPR {course.feeMin.toLocaleString()}–{course.feeMax.toLocaleString()}
-                        </p>
-                      </div>
                     </div>
 
                     <p className="text-text-muted leading-relaxed mb-4">{course.description}</p>
@@ -110,7 +104,7 @@ export default function CoursesPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-primary font-heading mb-3">Course Comparison</h2>
             <p className="text-text-muted max-w-2xl mx-auto">
-              Compare all 6 courses by certifications, destinations, hours, and fees.
+              Compare all 6 courses by certifications, destinations, and hours.
             </p>
           </div>
           <div className="overflow-x-auto rounded-2xl border border-slate-200">
@@ -121,7 +115,6 @@ export default function CoursesPage() {
                   <th className="px-4 py-3 text-center font-semibold">Hours</th>
                   <th className="px-4 py-3 text-left font-semibold">Certifications</th>
                   <th className="px-4 py-3 text-left font-semibold">Destinations</th>
-                  <th className="px-4 py-3 text-right font-semibold">Fee (NPR)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -151,9 +144,6 @@ export default function CoursesPage() {
                       </div>
                     </td>
                     <td className="px-4 py-3 text-text-muted">{course.destinations.join(', ')}</td>
-                    <td className="px-4 py-3 text-right font-semibold text-primary">
-                      {(course.feeMin / 1000).toFixed(0)}k–{(course.feeMax / 1000).toFixed(0)}k
-                    </td>
                   </tr>
                 ))}
               </tbody>

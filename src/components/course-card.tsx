@@ -62,14 +62,8 @@ export default function CourseCard({ course, className }: CourseCardProps) {
           ))}
         </div>
 
-        {/* Fee */}
         <div className="flex items-center justify-between">
-          <div>
-            <p className="text-xs text-text-muted">Course Fee</p>
-            <p className="font-bold text-primary">
-              NPR {(course.feeMin / 1000).toFixed(0)}k–{(course.feeMax / 1000).toFixed(0)}k
-            </p>
-          </div>
+          <div />
           <Link
             href={`/courses/${course.slug}`}
             className="inline-flex items-center gap-1 text-sm font-semibold text-accent-teal hover:text-sky-700 transition-colors"

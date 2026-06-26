@@ -152,13 +152,6 @@ export default async function CoursePage({ params }: PageProps) {
                     </span>
                     <span className="text-white font-semibold text-right text-sm">{course.certifications.join(', ')}</span>
                   </div>
-                  <div className="flex items-center justify-between py-2">
-                    <span className="text-white/60 text-sm">Course Fee</span>
-                    <div className="text-right">
-                      <span className="text-white font-bold">NPR {course.feeMin.toLocaleString()}–{course.feeMax.toLocaleString()}</span>
-                      <p className="text-white/50 text-xs">Installment available</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
