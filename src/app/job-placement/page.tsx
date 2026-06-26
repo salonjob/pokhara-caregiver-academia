@@ -162,66 +162,70 @@ export default function JobPlacementPage() {
       </section>
 
       {/* Nails Academia — Victoria Vynn Course */}
-      <section className="py-16 bg-gradient-to-br from-[#0f2d52] to-[#1a4a7a] text-white">
+      <section className="py-20 bg-gradient-to-br from-[#0a1e38] to-[#0f2d52] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-10">
 
-            {/* Text */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white/90 text-xs font-semibold mb-5">
-                🌸 Partner Training Programme
-              </div>
-              <h2 className="text-3xl md:text-4xl font-extrabold font-heading mb-3 leading-tight">
-                International Nail Technician Course in Nepal
-              </h2>
-              <p className="text-accent-teal font-semibold text-lg mb-4">
-                By Victoria Vynn · In Association with Nails Academia
-              </p>
-              <p className="text-white/75 leading-relaxed mb-6">
-                Nails Academia is the <strong className="text-white">only Victoria Vynn certified academy in South Asia</strong> — training professional nail technicians to European championship standards. Graduates are equipped with the exact skills demanded by premium Dubai and UAE salons.
-              </p>
-              <ul className="space-y-2 mb-8 text-left inline-block">
-                {[
-                  'Russian manicure & e-file techniques',
-                  'Gel extensions, sculpting & 3D nail art',
-                  'Victoria Vynn product mastery',
-                  'Championship competition preparation',
-                  'Victoria Vynn International Certification upon completion',
-                  'Direct pathway to GCC Salon Jobs placement',
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-white/85 text-sm">
-                    <CheckCircle className="w-4 h-4 text-accent-teal flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://www.nailsacademia.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent-teal text-white font-bold rounded-xl hover:bg-sky-600 transition-colors shadow-lg"
-              >
-                <ExternalLink className="w-5 h-5" />
-                Visit Nails Academia
-              </a>
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white/80 text-xs font-semibold mb-6">
+              🌸 Partner Training Programme
             </div>
-
-            {/* Stats panel */}
-            <div className="lg:w-64 flex-shrink-0 grid grid-cols-2 lg:grid-cols-1 gap-4 w-full">
-              {[
-                { value: '4 months', label: 'Course Duration' },
-                { value: 'South Asia', label: 'Only VV Certified Academy' },
-                { value: 'AED 3k–5k', label: 'Avg. Dubai Salary/month' },
-                { value: '500+', label: 'Graduates in GCC Salons' },
-              ].map((s) => (
-                <div key={s.label} className="bg-white/10 border border-white/15 rounded-xl p-4 text-center">
-                  <p className="text-xl font-extrabold text-white font-heading">{s.value}</p>
-                  <p className="text-white/55 text-xs mt-1">{s.label}</p>
-                </div>
-              ))}
-            </div>
-
+            <h2 className="text-3xl md:text-4xl font-extrabold font-heading mb-3 leading-tight">
+              International Nail Technician Course in Nepal
+            </h2>
+            <p className="text-accent-teal font-semibold text-base mb-5">
+              By Victoria Vynn · In Association with Nails Academia
+            </p>
+            <p className="text-white/65 max-w-2xl mx-auto leading-relaxed text-sm">
+              Nails Academia is the <span className="text-white font-semibold">only Victoria Vynn certified academy in South Asia</span> — training professional nail technicians to European championship standards. Graduates carry the exact skills demanded by premium Dubai and UAE salons.
+            </p>
           </div>
+
+          {/* Stats row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {[
+              { value: '4 Months', label: 'Course Duration' },
+              { value: '#1 in South Asia', label: 'Only VV Certified Academy' },
+              { value: 'AED 3k–5k', label: 'Avg. Dubai Salary / Month' },
+              { value: '500+', label: 'Graduates in GCC Salons' },
+            ].map((s) => (
+              <div key={s.label} className="bg-white/8 border border-white/12 rounded-2xl p-5 text-center">
+                <p className="text-xl font-extrabold text-white font-heading mb-1">{s.value}</p>
+                <p className="text-white/50 text-xs leading-snug">{s.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Course highlights grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-12">
+            {[
+              'Russian manicure & e-file techniques',
+              'Gel extensions, sculpting & 3D nail art',
+              'Victoria Vynn product mastery',
+              'Championship competition preparation',
+              'Victoria Vynn International Certification',
+              'Direct pathway to GCC Salon Jobs placement',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3 bg-white/6 border border-white/10 rounded-xl px-4 py-3">
+                <CheckCircle className="w-4 h-4 text-accent-teal flex-shrink-0" />
+                <span className="text-white/80 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <a
+              href="https://www.nailsacademia.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-accent-teal text-white font-bold rounded-xl hover:bg-sky-600 transition-colors shadow-lg text-base"
+            >
+              <ExternalLink className="w-5 h-5" />
+              Visit Nails Academia
+            </a>
+          </div>
+
         </div>
       </section>
 
