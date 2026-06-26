@@ -217,6 +217,22 @@ export default function JobPlacementPage() {
         </div>
       </section>
 
+      {/* Visit GCC Salon Jobs */}
+      <section className="py-10 bg-white border-t border-slate-100">
+        <div className="max-w-xl mx-auto px-4 text-center">
+          <p className="text-text-muted text-sm mb-4">Want to browse open roles or learn more about GCC Salon Jobs?</p>
+          <a
+            href="https://www.gccsalonjobs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-white font-bold rounded-xl hover:bg-primary-light transition-colors shadow-md"
+          >
+            <ExternalLink className="w-5 h-5" />
+            Visit gccsalonjobs.com
+          </a>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
